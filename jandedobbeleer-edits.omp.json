@@ -146,7 +146,7 @@
             "always_enabled": true
           },
           "style": "plain",
-          "template": "<#000000>\ue0b0</> \ueba2 {{ .FormattedMs }}\u2800",
+          "template": "<#000000>\ue0b0</> \ueba2 {{ .FormattedMs }}<#83769c,transparent>\ue0b4</>",
           "type": "executiontime"
         }
       ],
