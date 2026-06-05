@@ -173,6 +173,33 @@
         }
       ],
       "type": "rprompt"
+    },
+    {
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "alias": "PromptGit",
+          "foreground": "#ffffff",
+          "options": {
+            "fetch_status": false
+          },
+          "style": "plain",
+          "template": "{{ .RepoName }}{{ if .RelativeDir }}:{{ .RelativeDir }}{{ else }}:{{ end }} <lightYellow>[</><lightCyan>{{ .Ref }}</><lightYellow>]</>> ",
+          "type": "git"
+        },
+        {
+          "foreground": "#ffffff",
+          "options": {
+            "mapped_locations_enabled": false,
+            "style": "full"
+          },
+          "style": "plain",
+          "template": "{{ if .Segments.PromptGit.RepoName }}{{ else }}{{ .Location }}> {{ end }}",
+          "type": "path"
+        }
+      ],
+      "type": "prompt"
     }
   ],
   "console_title_template": "{{ .Shell }} in {{ .Folder }}",
