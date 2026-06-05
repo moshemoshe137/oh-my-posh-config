@@ -31,14 +31,12 @@ repos:
       - id: mixed-line-ending
       - id: trailing-whitespace
 
-  - repo: https://github.com/pre-commit/sync-pre-commit-deps
-    rev: v0.0.3
-    hooks:
-      - id: sync-pre-commit-deps
-
   - repo: https://github.com/python-jsonschema/check-jsonschema
     rev: 0.37.1
     hooks:
+      - id: check-jsonschema
+        args: [--check-metaschema]
+      - id: check-metaschema
       - id: check-github-actions
       - id: check-github-workflows
 
