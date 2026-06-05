@@ -1,0 +1,3 @@
+.cache/
+.pre-commit-cache/
+*.tmp
