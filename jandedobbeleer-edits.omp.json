@@ -145,6 +145,7 @@
       "type": "prompt"
     },
     {
+      "alignment": "right",
       "segments": [
         {
           "background": "#0077c2",
@@ -175,7 +176,7 @@
           "type": "time"
         }
       ],
-      "type": "rprompt"
+      "type": "prompt"
     },
     {
       "alignment": "left",
