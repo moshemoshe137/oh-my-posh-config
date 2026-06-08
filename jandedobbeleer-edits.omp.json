@@ -166,6 +166,9 @@
           "foreground": "#111111",
           "invert_powerline": true,
           "leading_diamond": "\ue0b2",
+          "options": {
+            "time_format": "RFC850"
+          },
           "style": "diamond",
           "template": " {{ .CurrentDate | date .Format }} ",
           "trailing_diamond": "\ue0b4",
