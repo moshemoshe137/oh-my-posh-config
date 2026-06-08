@@ -132,14 +132,6 @@
           "type": "aws"
         },
         {
-          "background": "#ffff66",
-          "foreground": "#111111",
-          "powerline_symbol": "\ue0b0",
-          "style": "powerline",
-          "template": " \uf0ad ",
-          "type": "root"
-        },
-        {
           "background": "#83769c",
           "foreground": "#ffffff",
           "options": {
@@ -158,8 +150,16 @@
           "background": "#0077c2",
           "foreground": "#ffffff",
           "style": "plain",
-          "template": "<#0077c2,transparent>\ue0b6</> \uf489 {{ .Name }} <transparent,#0077c2>\ue0b2</>",
+          "template": "<#0077c2,transparent>\ue0b6</> \uf489 {{ .Name }}{{ if .Segments.Admin }}<#ffff66,#0077c2> \ue0b2</>{{ else }} <transparent,#0077c2>\ue0b2</>{{ end }}",
           "type": "shell"
+        },
+        {
+          "alias": "Admin",
+          "background": "#ffff66",
+          "foreground": "#111111",
+          "style": "plain",
+          "template": " \udb81\udc99 <transparent,#ffff66>\ue0b2</>",
+          "type": "root"
         },
         {
           "background": "#2e9599",
