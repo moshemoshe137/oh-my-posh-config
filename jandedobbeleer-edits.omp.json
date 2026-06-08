@@ -202,7 +202,6 @@
       "type": "prompt"
     }
   ],
-  "console_title_template": "{{ .Shell }} in {{ .Folder }}",
   "final_space": true,
   "version": 4
 }
